@@ -16,16 +16,6 @@ const USER_CONFIG = {
   PROVINCE: '宁夏',
   CITY: '银川',
 
-/**
- * 获取天气情况
- * @param {*} province 省份
- * @param {*} city 城市
- */
-export const getWeather = async (province, city) => {
-  if (config.SWITCH && config.SWITCH.weather === false) {
-    return {}
-  }
-  
   USERS: [
     {
       // 想要发送的人的名字
