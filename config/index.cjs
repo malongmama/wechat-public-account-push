@@ -13,29 +13,8 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: 'c127a0067d4a2f33af5eed54bfaca89c',
 
-
   PROVINCE: '宁夏',
   CITY: '银川',
-
-  /**
- * 获取天气icon
- * @param {*} weather
- * @returns
- */
-export const getWeatherIcon = (weather) => {
-  let weatherIcon = '🌈'
-  const weatherIconList = ['☀️', '☁️', '⛅️',
-    '☃️', '⛈️', '🏜️', '🏜️', '🌫️', '🌫️', '🌪️', '🌧️']
-  const weatherType = ['晴', '阴', '云', '雪', '雷', '沙', '尘', '雾', '霾', '风', '雨']
-
-  weatherType.forEach((item, index) => {
-    if (weather.indexOf(item) !== -1) {
-      weatherIcon = weatherIconList[index]
-    }
-  })
-
-  return weatherIcon
-}
 
 /**
  * 获取天气情况
@@ -46,47 +25,6 @@ export const getWeather = async (province, city) => {
   if (config.SWITCH && config.SWITCH.weather === false) {
     return {}
   }
-
- const result = {
-      // 湿度
-      shidu: commonInfo.shidu,
-      // PM2.5
-      pm25: commonInfo.pm25,
-      // PM1.0
-      pm10: commonInfo.pm10,
-      // 空气质量
-      quality: commonInfo.quality,
-      // 预防感冒提醒
-      ganmao: commonInfo.ganmao,
-      // 日出时间
-      sunrise: info.sunrise,
-      // 日落时间
-      sunset: info.sunset,
-      // 空气质量指数
-      aqi: info.aqi,
-      // 天气情况
-      weather: info.type,
-      // 最高温度
-      maxTemperature: info.high.replace(/^高温\s*/, ''),
-      // 最低温度
-      minTemperature: info.low.replace(/^低温\s*/, ''),
-      // 风向
-      windDirection: info.fx,
-      // 风力等级
-      windScale: info.fl,
-      // 温馨提示
-      notice: info.notice,
-    }
-
-    RUN_TIME_STORAGE[`${province}_${city}`] = cloneDeep(result)
-
-    return result
-  }
-  console.error('天气情况获取失败', res)
-  return {}
-}
-
-
   
   USERS: [
     {
