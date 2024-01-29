@@ -21,9 +21,9 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '宝贝媳妇儿',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oo7wX6QqPCG9Yuj3eB7LRjDsgb9g',
+      id: 'oo7wX6S-aXuN7X3Go0pVqJCDDbMg',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'T9nmhuboi0YkggU-RRLio71iO_kJcVHpYVUo5HRgslI',
+      useTemplateId: 'T0CXNXVp81n54dmu7WNiw3Yh7O4WSXsyFl8rvc173w0',
       // 所在省份或城市，也可以不填
       province: '宁夏',
       // 所在城市或县区
