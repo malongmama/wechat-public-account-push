@@ -13,9 +13,7 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: 'c127a0067d4a2f33af5eed54bfaca89c',
 
-  // 省份和市
-    const province = config.PROVINCE
-    const city = config.CITY
+
   PROVINCE: '宁夏',
   CITY: '银川',
 
