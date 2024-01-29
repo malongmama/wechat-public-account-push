@@ -11,7 +11,7 @@ const USER_CONFIG = {
   APP_ID: 'wx2017b5aa2016a414',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '37baad99b69a2775c0d1559d2bbd2fe8',
+  APP_SECRET: 'c127a0067d4a2f33af5eed54bfaca89c',
 
   PROVINCE: '宁夏',
   CITY: '银川',
