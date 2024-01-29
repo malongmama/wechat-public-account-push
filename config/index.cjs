@@ -23,7 +23,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oo7wX6S-aXuN7X3Go0pVqJCDDbMg',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'BIdcZBHNGV6ytQVIOWdr1ITy-_3KP4ts_6OI-2ZZwh8',
+      useTemplateId: 'T9nmhuboi0YkggU-RRLio71iO_kJcVHpYVUo5HRgslI',
       // 所在省份或城市，也可以不填
       province: '宁夏',
       // 所在城市或县区
